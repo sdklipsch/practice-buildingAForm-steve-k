@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <style>
+        div {
+            padding-top: 5px;
+        }
+
+        .text-box {
+            width: 350px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Please submit your feedback!</h1>
+    <form action="./submit.html" method="GET">
+        <div>
+            <label for="full-name-input">Full Name:</label>
+            <input type="text" id="full-name-input" name="full-name-input">
+        </div>
+        <div>
+            <label for="email-input">Email Input:</label>
+            <input type="email" id="email-input" name="email-input">
+        </div>
+        <div>
+            <label for="password-input">Password:</label>
+            <input type="password" id="password-input" name="password-input">
+        </div>
+        <div>
+            <label for="feedback-category-dropdown">Feedback Category:</label>
+            <select id="feedback-category-dropdown" name="feedback-category-dropdown">
+                <option value="positive-comment">Positive Comment</option>
+                <option value="constructive-critism">Constructive Critism</option>
+                <option value="general-comment">General Comment</option>
+                <option value="review-feedback">Review</option>
+            </select>
+        </div>
+        <div>
+            <label for="preferred-contact-selection">Preferred Contact</label>
+            <input type="radio" id="call" name="preferred-contact-selection">Call</input>
+            <input type="radio" id="text" name="preferred-contact-selection">Text</input>
+            <input type="radio" id="email" name="preferred-contact-selection">Email</input>
+        </div>
+        <div>
+            <label for="additional-feature-interest">Additional Features of Interest:</label>
+                <div>
+                    <input type="checkbox" id="ads" name="ads">Ads</input>
+                </div>
+                <div>
+                    <input type="checkbox" id="video-content" name="video-content">Video Content</input>
+                </div>
+                <div>
+                    <input type="checkbox" id="articles" name="articles">Articles</input>
+                </div>
+        </div>
+        <div>
+            <label for="comment-input">Comments</label>
+            <div >
+                <input type="text" id="comment-input" name="comment-input" class="text-box">
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
