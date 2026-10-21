@@ -21,15 +21,19 @@
     <form action="./submit.html" method="GET">
         <div>
             <label for="full-name-input">Full Name:</label>
-            <input type="text" id="full-name-input" name="full-name-input">
+            <input type="text" id="full-name-input" name="full-name-input" required>
         </div>
         <div>
             <label for="email-input">Email Input:</label>
-            <input type="email" id="email-input" name="email-input">
+            <input type="email" id="email-input" name="email-input" required>
         </div>
         <div>
             <label for="password-input">Password:</label>
-            <input type="password" id="password-input" name="password-input">
+            <input type="password" id="password-input" name="password-input" required>
+        </div>
+        <div>
+            <label for="phone-input">Phone Number:</label>
+            <input type="tel" id="phone-input" name="phone-input">  
         </div>
         <div>
             <label for="feedback-category-dropdown">Feedback Category:</label>
@@ -61,7 +65,7 @@
         <div>
             <label for="comment-input">Comments</label>
             <div >
-                <input type="text" id="comment-input" name="comment-input" class="text-box">
+                <textarea id="comment-input" name="comment-input" class="text-box"></textarea>
             </div>
         </div>
         <div>
